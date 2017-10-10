@@ -4,12 +4,10 @@
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
-div#interface{
-    width: 900px;
-    background-color: white;
-    margin: -20px auto 0px auto;
-    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
-    padding: 10px;
+div#container_produtos{/*container de produtos*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #D3D3D3;
 }
 
 p{
@@ -25,8 +23,6 @@ a{
 a:hover{
     text-decoration: underline;
 }
-
-
 
 /* Formatação de imagens com legendas */
 figure.foto-legenda{
@@ -55,28 +51,4 @@ figure.foto-legenda figcaption{
 
 figure.foto-legenda:hover figcaption{
     opacity: 1;
-}
-
-section#corpo{
-    display: block;
-    width: 500px;
-    float: left;
-    border-right: 1px solid #606060;
-    padding-right: 15px;
-}
-
-article#noticia-principal h2{
-    font-size: 13pt;
-    color: #606060;
-    background-color: #dddddd;
-    padding: 5px 0px 5px;
-    margin: 10px 0px 10px 0px;
-}
-
-header#cabecalho-artigo h1{
-    font-family: 'FonteLogo', sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-bottom: 0px;
-    margin-top:  0px;
 }
