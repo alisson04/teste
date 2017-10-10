@@ -4,12 +4,22 @@
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
-div#container_produtos{/*container de produtos*/
-    padding-top: 30px;
-    padding-bottom: 30px;
+/*PRODUTOS----------------------------------------------------*/
+div.produtos{/*container de produtos*/
+    margin-top: 50px;
+    margin-bottom: 50px;
     background-color: #D3D3D3;
 }
 
+img.fotosProdutos{/*tamanho das imagens dos produtos*/
+    width: 100%;
+}
+
+div.produtosHover:hover{
+    background-color: black;
+}
+
+/*TEXTOS----------------------------------------------------*/
 p{
     text-align: justify;
     text-indent: 50px;

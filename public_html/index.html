@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Gráfica PromoImpresso</title>
-        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
         <meta charset="UTF-8">
+        <title>Gráfica PromoImpresso</title>
+
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="_css/header_footer.css"/>
 
         <script language="javascript" src="_javascript/funcoes.js" ></script>
 
@@ -16,35 +18,33 @@
         <link href="https://fonts.googleapis.com/css?family=Expletus+Sans" rel="stylesheet">
     </head>
 
-    <body style="font-family: 'Share Tech Mono', monospace; margin: 0px 0px 0px 0px;">
-        <iframe src="modelos/header.html" name="janela" id="frame-spec" 
-                style="width: 100%; height: 100px"  frameBorder="0" scrolling="no" ></iframe>
+    <body style="font-family: 'Share Tech Mono', monospace; margin: 0px 0px 0px 0px; background-color: #D3D3D3;">
+        <iframe src="modelos/header.html" name="janela" id="frame-header" 
+                frameBorder="0" scrolling="no" ></iframe>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="_imagens/logoNome.png" alt="First slide">
+                    <img class="d-block w-100" src="_imagens/banner/modeloBanner.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Graduado em Análise e Desenvolvimento de Sistemas</h3>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="_imagens/logoNome.png" alt="First slide">
+                    <img class="d-block w-100" src="_imagens/banner/modeloBanner2-2.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Experiência em Java e orientação a objetos  </h3>
+                        <h3>Java e orientação a objetos  </h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="_imagens/logoNome.png" alt="First slide">
+                    <img class="d-block w-100" src="_imagens/banner/modeloBanner2-2.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3>Programador Web</h3>
+                        <h3>Web</h3>
                     </div>
                 </div>
             </div>
@@ -58,46 +58,49 @@
             </a>
         </div>
 
-        <div id="container_produtos" class="container-fluid">
-            <div class="row">
-                <div class="col" >
-                    <div class="card" style="width: 20rem;">
+        <!--Produtos-->
+        <div class="container produtos">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <div class="card produtosHover" style="width: 80%;" >
                         <div class="card text-center">
                             <div class="card-body">
-                                <h4 class="card-title">CARTÃO DE VISITA</h4>
+                                <h4 >CARTÃO DE VISITA</h4>
 
-                                <img class="card-img-top" src="_imagens/produtos/cartaodevisita.jpg" alt="Card image cap">
-                                <a href="#" class="btn btn-primary">Veja mais</a>
+                                <img class="fotosProdutos" src="_imagens/produtos/cartaodevisita.jpg" alt="Card image cap">
+                                <a href="produto-cartao-de-visita.html" class="btn btn-primary">Veja mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 20rem;">
+                <div class="col" >
+                    <div class="card produtosHover" style="width: 80%;" >
                         <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">IMÃ DE GELADEIRA</h4>
 
-                                <img class="card-img-top" src="_imagens/produtos/ima.jpg" alt="Card image cap">
+                                <img class="fotosProdutos" src="_imagens/produtos/ima.jpg" alt="Card image cap">
                                 <a href="#" class="btn btn-primary">Veja mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" style="width: 20rem;">
+                    <div class="card produtosHover" style="width: 80%;" >
                         <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">10 BLOCOS 2V</h4>
-
-                                <img class="card-img-top" src="_imagens/produtos/bloco.jpg" alt="Card image cap">
+                                <img class="fotosProdutos" src="_imagens/produtos/bloco.jpg" alt="Card image cap">
                                 <a href="#" class="btn btn-primary">Veja mais</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card" style="width: 20rem;">
+            </div>
+            <!--
+            <div class="row justify-content-md-center">
+                <div class="col" >
+                    <div class="card " style="width: 80%;" >
                         <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">BANNER FOTOGRÁFICO</h4>
@@ -108,11 +111,23 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="col" >
+                    <div class="card " style="width: 60%;" >
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h4 class="card-title">IMÃ DE GELADEIRA</h4>
+
+                                <img class="card-img-top" src="_imagens/produtos/ima.jpg" alt="Card image cap">
+                                <a href="#" class="btn btn-primary">Veja mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
         </div>
-        
+
         <iframe src="modelos/footer.html" name="janela" id="frame-footer" 
-                style="width: 100%; height: 100px"  frameBorder="0" scrolling="no" ></iframe>
+                frameBorder="0" scrolling="no" ></iframe>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
